@@ -1,9 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageBird"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:src="@drawable/bird"
+        />
+
+    <ImageView
+        android:id="@+id/imageCat"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/imageBird"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:src="@drawable/cat"
+
+        />
+    <ImageView
+        android:id="@+id/imageDog"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/imageCat"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:src="@drawable/dog"
+
+        />
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="Start editing this file"/>
+        android:layout_alignTop="@id/imageBird"
+        android:layout_toEndOf="@id/imageBird"
+        android:text="@string/bird_description"
+        android:layout_centerVertical="true"
+        android:id="@+id/birdDesc"
+        android:visibility="invisible"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imageDog"
+        android:layout_toEndOf="@+id/imageDog"
+        android:text="@string/dog_description"
+        android:layout_centerVertical="true"
+        android:id="@+id/dogDesc"
+        android:visibility="invisible"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageCat"
+        android:layout_alignTop="@id/imageCat"
+        android:text="@string/cat_description"
+        android:layout_centerVertical="true"
+        android:id="@+id/catDesc"
+        android:visibility="invisible"
+
+        />
+    <Button
+        android:id="@+id/blueButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#1132ee"
+
+        />
+    <Button
+        android:id="@+id/redButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toStartOf="@id/blueButton"
+        android:layout_alignParentBottom="true"
+        android:background="#ee1111"
+
+        />
+    <Button
+        android:id="@+id/yellowButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toStartOf="@id/redButton"
+        android:layout_alignParentBottom="true"
+        android:background="#eee711"
+
+        />
+    <Button
+        android:id="@+id/greenButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@id/blueButton"
+        android:layout_alignParentBottom="true"
+        android:background="#1cee11"
+
+        />
+    <Button
+        android:id="@+id/cyanButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@id/greenButton"
+        android:layout_alignParentBottom="true"
+        android:background="#11c9ee"
+
+        />
+
 </RelativeLayout>

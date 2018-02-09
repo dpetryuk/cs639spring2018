@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">CS639SpringHW1</string>
+    <string name="app_name">CS639SpringHW1 Daniel Petryuk</string>
+    <string name="bird_description">A warm blooded egg-laying vertebrate distinguished by the possession of feathers, wings, and a beak</string>
+    <string name="cat_description">A domesticated furry animal with a short snout and claws.</string>
+    <string name="dog_description">A domesticated furry animal with a long snout, acute sense of smell, and a barking voice.</string>
 </resources>
