@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CS639SpringHW2</string>
+    <string name="add_fact">Add Fact</string>
+    <string name="delete_fact">Delete Fact</string>
+    <string name="next_fact">Next Fact</string>
+
+</resources>
